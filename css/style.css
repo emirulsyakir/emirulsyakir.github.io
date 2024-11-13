@@ -5,10 +5,38 @@
           box-sizing: border-box;
 }
 
+/* Adjust font size and spacing for mobile */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .sidebar {
+        display: none; /* Hide sidebars on smaller screens */
+    }
+}
+
+/* Styles for tablets and larger devices */
+@media (min-width: 601px) {
+    body {
+        font-size: 18px;
+    }
+    .sidebar {
+        display: block;
+    }
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
 body {
   background: #E5E5E5;
   background-image: url("bg.jpg");
+  font-size: 1rem;
+ 
 }
+
 
 #card-front {
   color: #FFDFDF;
@@ -16,7 +44,7 @@ body {
 }
 
 #card, #card-front, #card-inside {
-  height: 580px;
+  height: 500px;
 }
 
 .wrap {
@@ -25,11 +53,11 @@ body {
 }
 
 #card-front, #card-inside {
-  width: 50%;
+  width: 35%;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
   position: absolute;
-  left: 50%;
+  left: 38%;
 }
 
 #card-inside .wrap {
@@ -62,7 +90,7 @@ body {
   text-align: center;
   font-family: 'Lobster', cursive;
   font-style: italic;
-  font-size: 70px;
+  font-size: 40px;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15), 1px 1px 0 #ffc8c8, 2px 2px 0 #ff9696, 3px 3px 0 #ff7d7d;
   color: #FFF;
 }
