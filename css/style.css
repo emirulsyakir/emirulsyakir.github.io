@@ -34,6 +34,7 @@ body {
   background: #E5E5E5;
   background-image: url("bg.jpg");
   font-size: 1rem;
+  zoom: 70%;
  
 }
 
@@ -81,7 +82,7 @@ body {
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 20%;
   right: 0;
   left: 0;
 }
